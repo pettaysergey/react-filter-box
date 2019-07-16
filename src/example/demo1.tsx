@@ -72,6 +72,7 @@ export default class Demo1 extends React.Component<any, any> {
           data={data}
           options={this.options}
           onParseOk={this.onParseOk.bind(this)}
+          onSubmitHandler={() => console.log("custom handler")}
         />
         <Table
           rowHeight={50}
